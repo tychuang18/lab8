@@ -1,9 +1,15 @@
 function initCamera() {
   // Uncomment and fill in the correct selectors below.
-  // capture($('<Your code here>'),
-  //        $('<Your code here>'),
-  //        $('<Your code here>'));
+  <div class ="col">
+  <dive id = "camera" class="profile" style="max-width: 250px;">
+  <video autoplay id = "camera-video"><video>
+  <button id = "camera-button" class ="btn btn-primary">
+  </div>
+  </div>
 
+  <div class ="col">
+  <canvas id ="camera-canvas"></canvas>
+  </div>
   // For Reference:
   // capture($('#camera-video'),
   //       $('#camera-canvas'),
@@ -28,7 +34,7 @@ function capture(video, canvas, snapshotButton) {
         //Calculate dimension of photo from the video element.
         var width = video.width();
         var height = video.height();
-        
+
         canvas.attr('width', width);
         canvas.attr('height', height);
         ctx.drawImage(video[0], 0, 0, width, height);
@@ -46,4 +52,3 @@ function capture(video, canvas, snapshotButton) {
       successCallback, errorCallback);
 
 };
-
